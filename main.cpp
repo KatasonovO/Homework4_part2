@@ -38,11 +38,7 @@ private:
 public:
     bool showChanges = false;
 
-    Array()
-    {
-        cout << "Call constructor without parameters (create array[1x1])" << endl;
-        create(1, 1);
-    }
+    Array() = delete;
 
     Array(Array &source)
     {
@@ -177,9 +173,7 @@ public:
 int main()
 {
     cout << "Class Array presentation" << endl;
-    cout << "Create array  a" << endl;
-    Array a;
-    a.Show();
+
     cout << "Create array  b[5,5]" << endl;
     Array b(5, 5);
     b.Show();
